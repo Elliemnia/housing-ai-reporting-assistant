@@ -1,0 +1,7 @@
+zip_code,notice_type,eviction_cause,case_count,month
+90064,Nonpayment of Rent,Rent Owed,24,January
+90034,Lease Violation,Unauthorized Occupant,12,January
+90025,Nonpayment of Rent,Rent Owed,31,February
+90066,Owner Move-In,Owner Occupancy,8,February
+90064,Lease Violation,Nuisance,15,March
+90034,Nonpayment of Rent,Rent Owed,27,March
