@@ -1,45 +1,148 @@
 # Housing AI Reporting Assistant
 
-An AI-powered reporting assistant that helps public-sector and nonprofit teams turn CSV datasets into stakeholder-friendly executive summaries.
+An AI-powered reporting tool that transforms CSV datasets into stakeholder-friendly executive summaries for public-sector and nonprofit use cases.
 
-## Project Purpose
+---
 
-Many public agencies, nonprofits, and community organizations work with important datasets but have limited time and technical resources to analyze them. This project demonstrates how AI can support reporting workflows by transforming structured data into clear, plain-English insights for non-technical stakeholders.
+## Project Overview
+
+Many organizations work with valuable datasets but lack the technical resources to quickly extract actionable insights. This project demonstrates how AI can help translate structured data into plain-language summaries that are easy for non-technical stakeholders to understand.
+
+The application allows users to upload CSV datasets, review basic statistics, and generate executive-style summaries using Claude AI.
+
+---
 
 ## Features
 
-- Upload a CSV file
-- Preview dataset structure
-- Display row and column counts
-- Identify numeric columns
-- Generate basic statistics
-- Generate an executive summary using Claude API
-- Includes demo fallback mode when API credits are unavailable
-- Translate technical findings into plain language for stakeholders
+* Upload CSV datasets
+* Preview and inspect data
+* Display dataset dimensions and column names
+* Generate descriptive statistics
+* Produce executive summaries with Claude AI
+* Built-in fallback mode when API credits are unavailable
+* Error handling and graceful degradation
+* Designed for public-sector and nonprofit reporting workflows
+
+---
 
 ## Tech Stack
 
-- Python
-- Streamlit
-- Pandas
-- Claude API
-- Anthropic Python SDK
-- Python dotenv
+* Python
+* Streamlit
+* Pandas
+* Anthropic Claude API
+* python-dotenv
+* Git & GitHub
 
-## Example Use Case
+---
 
-A housing department, civic organization, or nonprofit can upload eviction, housing inventory, program, or service data and quickly generate a plain-language summary for internal teams, leadership, or community stakeholders.
+## Example Use Cases
 
-## Demo Mode
+* Housing departments
+* Nonprofit organizations
+* Civic technology projects
+* Public health reporting
+* Community programs
+* Internal operational reporting
 
-This project supports a demo fallback mode. If a live Claude API response cannot be generated because of missing credits, billing limits, or API configuration, the app displays a sample executive summary instead of failing.
+---
 
-This makes the tool easier to test and demonstrates the intended user experience.
+## Screenshots
 
-## How to Run Locally
+### Dataset Preview
 
-1. Clone the repository
+![Dataset Preview](screenshots/demo_summary1.png)
+
+### AI Executive Summary
+
+![AI Summary](screenshots/demo_summary2.png)
+
+---
+
+## Repository Structure
+
+```
+housing-ai-reporting-assistant/
+
+│
+├── app.py
+├── requirements.txt
+├── README.md
+├── .env.example
+├── .gitignore
+│
+├── sample_data/
+│     └── sample_housing_data.csv
+│
+└── screenshots/
+      ├── demo_summary1.png
+      └── demo_summary2.png
+```
+
+---
+
+## Installation
+
+Clone the repository:
 
 ```bash
 git clone https://github.com/Elliemnia/housing-ai-reporting-assistant.git
 cd housing-ai-reporting-assistant
+```
+
+Create a virtual environment:
+
+```bash
+python -m venv venv
+```
+
+Activate:
+
+```bash
+.\venv\Scripts\activate
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Create a .env file:
+
+```text
+ANTHROPIC_API_KEY=your_api_key_here
+```
+
+Run the application:
+
+```bash
+streamlit run app.py
+```
+
+---
+
+## What I Learned
+
+Through this project I practiced:
+
+* Building AI-assisted workflows
+* Integrating external APIs
+* Error handling and fallback mechanisms
+* Creating Streamlit applications
+* Working with environment variables
+* Managing projects with Git and GitHub
+* Designing solutions for non-technical users
+
+---
+
+## Future Improvements
+
+* Interactive visualizations
+* Downloadable PDF reports
+* Multi-file uploads
+* Data quality validation
+* Chart generation
+* Support for larger datasets
+* RAG-based document analysis
+* Agent workflows
