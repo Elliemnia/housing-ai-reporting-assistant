@@ -146,3 +146,29 @@ Through this project I practiced:
 * Support for larger datasets
 * RAG-based document analysis
 * Agent workflows
+## Live Demo
+
+Streamlit App:
+
+https://housing-ai-reporting-assistant-7dwzdqv4mhws427ymbavdv.streamlit.app/
+
+GitHub Repository:
+
+https://github.com/Elliemnia/housing-ai-reporting-assistant
+
+---
+
+## Project Links
+
+* Live Demo: https://housing-ai-reporting-assistant-7dwzdqv4mhws427ymbavdv.streamlit.app/
+* Source Code: https://github.com/Elliemnia/housing-ai-reporting-assistant
+
+---
+
+## Author
+
+Ellie Nia
+
+LinkedIn | GitHub | Streamlit
+
+This project was created to demonstrate how AI can help public-sector and nonprofit organizations transform structured data into stakeholder-friendly executive summaries.
